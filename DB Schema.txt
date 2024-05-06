@@ -1,0 +1,37 @@
+# Database-Fundamentals
+
+This database will require 4 tables:
+1. Books
+2. Authors
+3. Customers
+4. Transactions
+
+Each table will require the following fields:
+### 1. Books:
+PK - isbn TEXT(13) NOT NULL
+   - title TEXT NOT NULL
+FK - author_id INT NOT NULL
+   - quantity_in_stock INT NOT NULL
+   - price DECIMAL NOT NULL
+
+### 2. Authors
+PK - id INT AUTO_INCREMENT
+   - name TEXT NOT NULL
+FK1- collaborator_id INT NULL
+
+### 3. Customers
+PK - id INT AUTO_INCREMENT
+   - name TEXT NOT NULL
+   - email TEXT UNIQUE
+
+### 4. Transactions
+PK - id INT AUTO_INCREMENT
+FK - customer_id INT NOT NULL
+FK - book_isbn TEXT(13) NOT NULL
+FK - book_price INT NOT NULL
+   - quantity_sold INT NOT NULL
+  
+There will also need to be key relationships between the tables, defined as follows:
+Every book will need a single author_id. An author can have many books
+Each Transaction represents a book sold to a customer, so it will need a customer_id, book_isbn, and book_price.
+A Customer should be able to buy multiple books in different transactions, and even be able to repeat the same exact order they made prevoiously.
