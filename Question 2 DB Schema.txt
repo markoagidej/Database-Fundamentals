@@ -1,0 +1,22 @@
+# Database Fundamentals
+## Question 2 DB Schema
+
+In this schema, we need only 2 tables:
+1. Vehicles
+2. Rental_Agreements
+
+Each table will require the following columns:
+### 1. Vehicles:
+PK - vin VARCAHR(17) NOT NULL
+   - make TEXT NOT NULL
+   - model TEXT NOT NULL
+   - last_returned_mileage TEXT NOT NULL
+
+### 2. Rental_Agreements
+PK - id
+   - customer_email TEXT NOT NULL
+   - start_date DATETIME NOT NULL
+   - end_date DATETIME NOT NULL
+   - vehicle_vin VARCAHR(17) NOT NULL
+
+Each Vehcile and Rental Agreement are linked, modeling a one-to-one relationship

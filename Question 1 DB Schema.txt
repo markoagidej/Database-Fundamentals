@@ -1,4 +1,5 @@
 # Database-Fundamentals
+## Question 1 DB Schema
 
 This database will require 4 tables:
 1. Books

@@ -1,0 +1,9 @@
+# Database Fundamentals
+## Question 2 Task 4 Scenario Analysis
+
+Due to the one-to-one relationship between the Rental_Agreements and Vehicles tables, there can only ever be one Rental Agreement entry per vehicle.
+No Rental Agreement can be made without a vehicle.
+Any amount of vehicles can be made.
+Once a Rental Agreement is made, there can not be another agreement made wit hteh same car until the current one is complete and presumably removed from the table.
+Updates to Rental Agreement entries are unrestricted to email, start, and end dates. A vehicle could be updated as long there is not another entry using that vehicle.
+To check if a vechicle is available, we woudl simply see if the vin is in the Rental_Agreements vehicle_vin column.

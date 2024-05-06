@@ -1,4 +1,5 @@
-Database Normalization Analysis
+# Database Fundamentals
+## Question 1 Database Normalization Analysis
 
 1NF:
 This database meets the first level of normalization.
