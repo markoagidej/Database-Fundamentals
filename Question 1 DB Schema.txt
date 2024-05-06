@@ -22,7 +22,6 @@ FK1- collaborator_id INT NULL
 ### 3. Customers
 PK - id INT AUTO_INCREMENT
    - name TEXT NOT NULL
-   - email TEXT UNIQUE
 
 ### 4. Transactions
 PK - id INT AUTO_INCREMENT

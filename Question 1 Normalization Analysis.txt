@@ -1,0 +1,16 @@
+Database Normalization Analysis
+
+1NF:
+This database meets the first level of normalization.
+Every single column in all tables only holds a single value.
+This can be seen by every table having a primary key.
+
+2NF:
+This database meets the second level of normalization.
+All non-primary key columns are dependent on the primary key.
+There is no non non-primary key that can be used to find the same entry in a table.
+Even for Author and Customer, name could potentially be the same between two different people, thus name depends on id.
+
+3NF:
+This database meets the third level of normalization.
+There are no instances of non-primary key columns depending on each other.
